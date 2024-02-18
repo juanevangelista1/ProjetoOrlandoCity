@@ -1,0 +1,34 @@
+#latest-news {
+    color: black;
+    >div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .carousel {
+            height: 320px;
+            .carousel-item {
+                min-width: 320px;
+                max-width: 320px;
+                & img {
+                    width: 100%;
+                }
+                & a {
+                    text-decoration: none;
+                    color: var(--black-color);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                & figure {
+                    margin: 0;
+                    & h3 {
+                        font-size: 15px;
+                        color: var(--black-color);
+                        margin: 10px 0;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

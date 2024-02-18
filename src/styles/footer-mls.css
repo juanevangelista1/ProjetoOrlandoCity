@@ -1,0 +1,56 @@
+body > footer #mls {
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-top: 1px solid var(--black-color);
+        margin-top: 20px;
+        padding-top: 20px;
+        > img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        & ul {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+            > li {
+                list-style: none;
+                & a {
+                   color: var(--text-color); 
+                   text-decoration: none;
+                   font-size: 17px;
+                   &:hover {
+                    text-decoration: underline;
+                   }
+                }
+            }
+        }
+        > div {
+            flex-direction: column;
+            margin: 20px;
+            & p {
+                color: var(--text-color);
+                line-height: 24px;
+                font-size: 18px;
+            }
+        }
+        @media (min-width: 768px) {
+            flex-direction: row;
+            > div {
+                border-left: var(--text-color) 1px solid;
+                padding-left: 40px;
+                & ul {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
